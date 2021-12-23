@@ -1,0 +1,8 @@
+33 6
+editor ending entitle admire advertise accompany actactivist efficient affect embarrass economy enthusiastic acid account accept edition adapt economic ability absolutely encourage educate abandoned about embarrassed eager adventure admit ear earth easily advantage advertisement
+embarra\S*
+adap\S*
+embarrass\S*
+\S*onomic
+ac\S*
+edito\S*

@@ -1,0 +1,10 @@
+36 8
+engaged advanced economics accidental embarrass economy end adapt engine embarrassed add additional employee adventure advantage afraid advertising abandon administration advertisement acquire accompany actor emphasis early edge adequate eager entitle academic acceptable absent accident emotional enthusiastic eat
+enthusiasti\S*
+ea\S*
+en\S*
+acq\S*
+a\S*ing
+\S*
+accomp\S*y
+emba\S*ed
