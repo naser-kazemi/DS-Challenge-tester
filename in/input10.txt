@@ -1,0 +1,17 @@
+90 15
+in plain expression RegEx matches The results PCRE Community Tools below Edit Reference your favorite hosted your Share Expression with Cheatsheet by with bar includes side can the mode with expression supported the Media created or by in the for Explain groups also Save details and lists You Replace JavaScript is a patterns you flavors capture Details RegExr Text and matches results see are expression List and My create Explore was over the English gskinnercom Patterns Tests Temple output Help full custom Roll describes Validate or view of to proudly
+\S*
+\S*e
+cu\S*
+\S*ea\S*
+exp\S*
+Re\S*
+re\S*
+\S*re
+S\S*e
+s\S*e
+\S*cri\S*
+\S*ail\S*
+\S*es
+\S*t\S*t
+\S*ss\S*
