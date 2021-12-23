@@ -32,8 +32,8 @@ def check_answer(to_be_checked_out, correct_answer_out, test_num):
         print('test #' + str(test_num) + " failed")
         return False
     for i in range(lines):
-        to_be_checked = to_be_checked_lines[i].split(' ')
-        correct_answer = correct_answer_lines[i].split(' ')
+        to_be_checked = to_be_checked_lines[i].strip().split(' ')
+        correct_answer = correct_answer_lines[i].strip().split(' ')
         if correct_answer[0] != to_be_checked[0]:
             print('test #' + str(test_num) + " failed")
             print(to_be_checked_lines[i], correct_answer_lines[i],
