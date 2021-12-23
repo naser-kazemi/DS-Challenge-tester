@@ -39,7 +39,7 @@ def check_answer(to_be_checked_out, correct_answer_out, test_num):
             print("your output:\n" + to_be_checked_lines[i], "correct output:\n" + correct_answer_lines[i],
                   sep='\n---------------------------------------------------------\n',
                   end='\n---------------------------------------------------------\n'
-                      '---------------------------------------------------------\n')
+                      '---------------------------------------------------------\n\n')
             return False
         to_be_checked = to_be_checked[1:]
         correct_answer = correct_answer[1:]
@@ -47,7 +47,7 @@ def check_answer(to_be_checked_out, correct_answer_out, test_num):
             print("your output:\n" + to_be_checked_lines[i], "correct output:\n" + correct_answer_lines[i],
                   sep='\n---------------------------------------------------------\n',
                   end='\n---------------------------------------------------------\n'
-                      '---------------------------------------------------------\n')
+                      '---------------------------------------------------------\n\n')
             return False
     return True
 
