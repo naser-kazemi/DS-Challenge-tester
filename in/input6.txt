@@ -1,4 +1,4 @@
-6 5
+3 5
 mississippi aa adceb
 m\S*ss\S*i\S*pi
 a
