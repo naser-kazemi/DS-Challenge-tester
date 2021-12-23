@@ -1,9 +1,9 @@
-1 phasellus
-1 quis
+3 phasellus phasellus phasellus
+2 quis quis
 0 
-5 mollis pellentesque nullam nulla phasellus
-1 hendrerit
+7 mollis pellentesque nullam nulla phasellus phasellus phasellus
+2 hendrerit hendrerit
 1 accumsan
 1 vulputate
 1 ante
-1 erat
+2 erat erat
