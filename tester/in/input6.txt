@@ -1,0 +1,7 @@
+3 5
+mississippi aa adceb
+m\S*ss\S*i\S*pi
+a
+\S*a
+\S*a\S*b
+a\S*c\S*b

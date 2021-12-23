@@ -32,18 +32,22 @@ def check_answer(to_be_checked_out, correct_answer_out, test_num):
         print('test #' + str(test_num) + " failed")
         return False
     for i in range(lines):
-        to_be_checked = to_be_checked_lines[i].split(' ')
-        correct_answer = correct_answer_lines[i].split(' ')
+        to_be_checked = to_be_checked_lines[i].strip().split(' ')
+        correct_answer = correct_answer_lines[i].strip().split(' ')
         if correct_answer[0] != to_be_checked[0]:
             print('test #' + str(test_num) + " failed")
-            print(to_be_checked_lines[i], correct_answer_lines[i],
-                  sep='\n---------------------------------------------------------\n')
+            print("your output:\n" + to_be_checked_lines[i], "correct output:\n" + correct_answer_lines[i],
+                  sep='\n---------------------------------------------------------\n',
+                  end='\n---------------------------------------------------------\n'
+                      '---------------------------------------------------------\n\n')
             return False
         to_be_checked = to_be_checked[1:]
         correct_answer = correct_answer[1:]
-        if not check_answer_line(to_be_checked, correct_answer, i):
-            print(to_be_checked_lines[i], correct_answer_lines[i],
-                  sep='\n---------------------------------------------------------\n')
+        if not check_answer_line(to_be_checked, correct_answer, test_num):
+            print("your output:\n" + to_be_checked_lines[i], "correct output:\n" + correct_answer_lines[i],
+                  sep='\n---------------------------------------------------------\n',
+                  end='\n---------------------------------------------------------\n'
+                      '---------------------------------------------------------\n\n')
             return False
     return True
 

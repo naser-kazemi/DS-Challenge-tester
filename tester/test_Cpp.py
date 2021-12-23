@@ -32,26 +32,30 @@ def check_answer(to_be_checked_out, correct_answer_out, test_num):
         print('test #' + str(test_num) + " failed")
         return False
     for i in range(lines):
-        to_be_checked = to_be_checked_lines[i].split(' ')
-        correct_answer = correct_answer_lines[i].split(' ')
+        to_be_checked = to_be_checked_lines[i].strip().split(' ')
+        correct_answer = correct_answer_lines[i].strip().split(' ')
         if correct_answer[0] != to_be_checked[0]:
             print('test #' + str(test_num) + " failed")
-            print(to_be_checked_lines[i], correct_answer_lines[i],
-                  sep='\n---------------------------------------------------------\n')
+            print("your output:\n" + to_be_checked_lines[i], "correct output:\n" + correct_answer_lines[i],
+                  sep='\n---------------------------------------------------------\n',
+                  end='\n---------------------------------------------------------\n'
+                      '---------------------------------------------------------\n\n')
             return False
         to_be_checked = to_be_checked[1:]
         correct_answer = correct_answer[1:]
         if not check_answer_line(to_be_checked, correct_answer, i):
-            print(to_be_checked_lines[i], correct_answer_lines[i],
-                  sep='\n---------------------------------------------------------\n')
+            print("your output:\n" + to_be_checked_lines[i], "correct output:\n" + correct_answer_lines[i],
+                  sep='\n---------------------------------------------------------\n',
+                  end='\n---------------------------------------------------------\n'
+                      '---------------------------------------------------------\n\n')
             return False
     return True
 
 
 def test_code():
+    subprocess.run("g++ -std=c++11 main.cpp -o run", shell=True, capture_output=True, text=True)
     for i in range(1, len(list(filter(lambda x: ".txt" in x, os.listdir('./in')))) + 1):
         _input = open("./in/input" + str(i) + ".txt")
-        subprocess.run("g++ -std=c++11 main.cpp -o run", shell=True, capture_output=True, text=True)
         output = subprocess.run('./run', shell=True, stdin=_input, capture_output=True, text=True)
         to_be_checked = output.stdout
         correct_answer = open_file("./out/output" + str(i) + ".txt")
