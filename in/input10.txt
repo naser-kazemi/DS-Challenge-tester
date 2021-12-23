@@ -5,10 +5,10 @@ in plain expression RegEx matches The results PCRE Community Tools below Edit Re
 cu\S*
 \S*ea\S*
 exp\S*
-Re\S*
+re\S*
 re\S*
 \S*re
-S\S*e
+s\S*e
 s\S*e
 \S*cri\S*
 \S*ail\S*

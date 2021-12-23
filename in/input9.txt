@@ -5,8 +5,8 @@ acquire investment activity debate earn religious deal possible relationship aff
 pol\S*c\S*
 re\S*
 r\S*e
-I\S*n
-I\S*n
+i\S*n
+i\S*n
 mean\S*
 m\S*
 \S*ma\S*

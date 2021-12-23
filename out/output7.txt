@@ -1,7 +1,7 @@
-1 Phasellus
+1 phasellus
 1 quis
 0 
-5 Phasellus mollis pellentesque Nullam nulla
+5 mollis pellentesque nullam nulla phasellus
 1 hendrerit
 1 accumsan
 1 vulputate

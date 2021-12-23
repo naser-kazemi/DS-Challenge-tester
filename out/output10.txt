@@ -1,15 +1,15 @@
-75 flavors Edit your hosted mode output bar view Validate plain create List details Cheatsheet proudly Patterns results you below in created RegExr patterns Media capture includes is matches Details gskinnercom lists Save Roll favorite full Explore Help PCRE for My Tests The can see are and JavaScript by of over Replace a side expression or Reference Explain custom Tools was groups Text also describes the English with Temple Expression RegEx to Share Community You supported
-16 Replace side Explore Reference capture The mode the see Temple Validate are create Save Share favorite
+70 explain flavors replace your hosted mode output reference bar view plain english create details text proudly results you below edit in created patterns capture includes is community list my matches javascript regex tests gskinnercom lists favorite full regexr for roll save media tools can cheatsheet pcre see are and by of share validate over a side expression or explore custom was groups also describes the help with temple to supported
+16 side explore replace save capture mode reference the pcre see are create temple share favorite validate
 1 custom
-3 created create Cheatsheet
-1 expression
-4 Replace RegEx Reference RegExr
-1 results
-4 Explore are capture Share
-2 Save Share
-2 side see
-2 JavaScript describes
-2 Details details
+3 cheatsheet created create
+3 explain expression explore
+5 reference regex regexr replace results
+5 reference regex regexr replace results
+5 pcre explore are capture share
+4 side see save share
+4 side see save share
+2 describes javascript
+1 details
 3 includes matches describes
-2 output Cheatsheet
-2 expression Expression
+3 output cheatsheet text
+1 expression
