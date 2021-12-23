@@ -1,0 +1,5 @@
+6 3
+cafe coffee caffe cup java kaffe
+c\S*
+c\S*e\S*
+\S*affe

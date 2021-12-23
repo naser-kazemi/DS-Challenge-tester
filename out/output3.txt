@@ -1,0 +1,3 @@
+1 core
+4 core cat cactus cape
+0 
