@@ -18,7 +18,7 @@ If you have problem running "test_python.py" script, you may change "python3 mai
 
 ## Test Cases
 
-Test from #1 to #10 consists of queries with more than one "\S*" in the given pattern and it is not necessary to pass them. But your code has to pass all the other tests. 
+Tests from #1 to #10 consist of queries with more than one "\S*" in the given pattern and it is not necessary to pass them. But your code has to pass all the other tests. 
 
 
 This tester will be updated with more features for phase 2 and more acurate diff-checker functions.
