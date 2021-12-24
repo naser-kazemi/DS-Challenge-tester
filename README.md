@@ -1,20 +1,20 @@
 # DS-Challenge-tester
 
 ## How to use the Tester
-This is Tester for DS Challenge phase 1. The tester consists of python scripts for testing your code in Java, Python and C++ languages.
+This is a Tester for Data Structures and Algorithms Challenge phase 1. The tester consists of python scripts for testing your code in Java, Python and C++ languages.
 
-All you need to do is to copy all of your project source code files and a "driver code in file a with name":
+All you need to do is to copy all of your project source code files and a "driver code in a file with name":
 
 + Main.java for Java
 + main.cpp for C++
 + main.py for Python
 
-without any packages in tester directory and run the right script.
+without any packages in the tester directory and run the right script.
 
-For project written in C, C++ tester can be slightly modified which is easy. all you need is to change the command for code compilation in in subprocess.run() function.
-Even for some C++ compliers which can complie C code without any problem, this is not needed.
+For projects written in C, "C++ tester" can be slightly modified which is easy. all you need is to change the command for code compilation in the subprocess.run() function.
+Although for some C++ compliers which can complie C code without any problems, this is not needed.
 
-If you have problem running test_python.py script, you may change "python3 main.py" command to "pyhton main.cpp" in subprocess.run() function and there will be no issue.
+If you have problem running "test_python.py" script, you may change "python3 main.py" command to "pyhton main.cpp" in the subprocess.run() function and there will be no issues.
 
 ## Test Cases
 
