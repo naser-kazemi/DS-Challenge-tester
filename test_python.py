@@ -11,15 +11,21 @@ def check_answer_line(to_be_checked, correct_answer, test_num):
     size = len(correct_answer)
     count = 0
     if len(to_be_checked) != len(correct_answer):
-        print('test #' + str(test_num) + " failed")
+        print('test #' + str(test_num) + " failed",
+              end='\n---------------------------------------------------------\n'
+                  '---------------------------------------------------------\n\n')
         return False
     for word in to_be_checked:
         if word not in correct_answer:
-            print('test #' + str(test_num) + " failed")
+            print('test #' + str(test_num) + " failed",
+                  end='\n---------------------------------------------------------\n'
+                      '---------------------------------------------------------\n\n')
             return False
         count += 1
     if size != count:
-        print('test #' + str(test_num) + " failed")
+        print('test #' + str(test_num) + " failed",
+              end='\n---------------------------------------------------------\n'
+                  '---------------------------------------------------------\n\n')
         return False
     return True
 
@@ -29,7 +35,9 @@ def check_answer(to_be_checked_out, correct_answer_out, test_num):
     correct_answer_lines = correct_answer_out.strip().split("\n")
     lines = len(to_be_checked_lines)
     if lines != len(correct_answer_lines):
-        print('test #' + str(test_num) + " failed")
+        print('test #' + str(test_num) + " failed! Number of lines is not equal!",
+              end='\n---------------------------------------------------------\n'
+                  '---------------------------------------------------------\n\n')
         return False
     for i in range(lines):
         to_be_checked = to_be_checked_lines[i].strip().split(' ')
