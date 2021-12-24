@@ -18,4 +18,4 @@ If you have problem running test_python.py script, you may change "python3 main.
 
 ## Test Cases
 
-Test from #1 to #10 consists of queries with more than one "\S*" in the given pattern and it is not necessary to pass them. But your code has to pass all the other tests.
+Test from #1 to #10 consists of queries with more than one "\S*" in the given pattern and it is not necessary to pass them. But your code has to pass all the other tests. 
