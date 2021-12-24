@@ -14,7 +14,7 @@ without any packages in the tester directory and run the right script.
 For projects written in C, _test_Cpp.py_ can be slightly modified, which is easy. all you need to do is to change the command for code compilation in the _subprocess.run()_ function.
 Although for some C++ compliers which can complie C codes without any problems, this is not needed.
 
-_If you have problem running "test_python.py" script, you may change "python3 main.py" command to "python main.cpp" in the subprocess.run() function and there will be no issues._
+_If you have problem running "test_python.py" script, you may change "python3 main.py" command to "python main.py" in the subprocess.run() function and there will be no issues._
 
 ## Test Cases
 
