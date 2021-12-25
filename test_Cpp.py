@@ -61,8 +61,8 @@ def check_answer(to_be_checked_out, correct_answer_out, test_num):
 
 
 def test_code():
-    subprocess.run("g++ -std=c++11 main.cpp -o run", shell=True, capture_output=True, text=True)
-    for i in range(1, len(list(filter(lambda x: ".txt" in x, os.listdir('./in')))) + 1):
+    subprocess.run("g++ -std=c++11 ./yourCode/main.cpp -o run", shell=True, capture_output=True, text=True)
+    for i in range(1, len(list(filter(lambda x: ".txt" in x, os.listdir('./tests/in')))) + 1):
         _input = open("./tests/in/input" + str(i) + ".txt")
         output = subprocess.run('./run', shell=True, stdin=_input, capture_output=True, text=True)
         to_be_checked = output.stdout

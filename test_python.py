@@ -60,10 +60,10 @@ def check_answer(to_be_checked_out, correct_answer_out, test_num):
     return True
 
 
-def test_code(code):
-    for i in range(1, len(list(filter(lambda x: ".txt" in x, os.listdir('./in')))) + 1):
+def test_code():
+    for i in range(1, len(list(filter(lambda x: ".txt" in x, os.listdir('./tests/in')))) + 1):
         _input = open("./tests/in/input" + str(i) + ".txt")
-        output = subprocess.run("python3 " + code, shell=True, stdin=_input, capture_output=True, text=True)
+        output = subprocess.run("python3 ./yourCode/main.py", shell=True, stdin=_input, capture_output=True, text=True)
         to_be_checked = output.stdout
         correct_answer = open_file("./tests/out/output" + str(i) + ".txt")
         if check_answer(to_be_checked, correct_answer, i):
@@ -73,5 +73,4 @@ def test_code(code):
 
 
 if __name__ == '__main__':
-    file_name = "main.py"
-    test_code(file_name)
+    test_code()
