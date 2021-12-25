@@ -1,8 +1,0 @@
-42 6
-emerge engineering emotional entertainment achievement advertising acquire able end addition education absence employee ease engaged actactivist energy employ ear effective emotion encourage acid east engineer emergency engine emphasis eastern editor admit across accent effort absolutely above entire encouragement ability economy employer edge
-encouragemen\S*
-e\S*
-addition\S*
-en\S*
-admi\S*
-engineeri\S*

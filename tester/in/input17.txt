@@ -1,9 +1,0 @@
-22 7
-effective easily advertisement earn encourage about engineering emerge east ear entire ease employee eat accent acquire activity ability emotional embarrass economics economy
-employee\S*
-engineer\S*
-a\S*t
-emoti\S*al
-acc\S*nt
-economy\S*
-abili\S*

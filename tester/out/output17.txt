@@ -1,7 +1,0 @@
-1 employee
-1 engineering
-3 advertisement about accent
-1 emotional
-1 accent
-1 economy
-1 ability

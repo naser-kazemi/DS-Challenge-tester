@@ -1,5 +1,0 @@
-11 3
-mon monk money month monad mongos sidney monster color colour sydney
-mon\S*
-col\S*r
-s\S*dn\S*y
