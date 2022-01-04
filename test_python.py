@@ -77,8 +77,8 @@ def test_code(get_time=False):
             print('test #' + str(i) + " passed")
             print("---------------------------------------------------------"
                   "\n---------------------------------------------------------\n")
-            if get_time:
-                print(output_time + '\n\n')
+        if get_time:
+            print(output_time + '\n\n')
     if get_time:
         subprocess.run("python3 timeTest/reset_python.py", shell=True)
 

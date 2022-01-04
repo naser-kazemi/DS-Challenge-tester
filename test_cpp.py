@@ -60,19 +60,30 @@ def check_answer(to_be_checked_out, correct_answer_out, test_num):
     return True
 
 
-def test_code():
+def test_code(get_time=False):
+    if get_time:
+        subprocess.run("python3 timeTest/test_time_cpp.py", shell=True)
     subprocess.run("g++ -std=c++11 ./yourCode/main.cpp -o run", shell=True, capture_output=True, text=True)
     for i in range(1, len(list(filter(lambda x: ".txt" in x, os.listdir('./tests/in')))) + 1):
         _input = open("./tests/in/input" + str(i) + ".txt")
         output = subprocess.run('./run', shell=True, stdin=_input, capture_output=True, text=True)
         to_be_checked = output.stdout
+        output_time = ''
+        if get_time:
+            lines = to_be_checked.strip().split('\n')
+            output_time = lines[len(lines) - 1]
+            to_be_checked = '\n'.join(lines[:len(lines) - 1])
         correct_answer = open_file("./tests/out/output" + str(i) + ".txt")
         if check_answer(to_be_checked, correct_answer, i):
             print('test #' + str(i) + " passed")
             print("---------------------------------------------------------"
                   "\n---------------------------------------------------------\n")
+        if get_time:
+            print(output_time + '\n\n')
+    if get_time:
+        subprocess.run("python3 timeTest/reset_cpp.py", shell=True)
     os.remove("run")
 
 
 if __name__ == '__main__':
-    test_code()
+    test_code(True)
