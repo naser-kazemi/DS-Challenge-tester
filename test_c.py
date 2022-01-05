@@ -51,7 +51,7 @@ def check_answer(to_be_checked_out, correct_answer_out, test_num):
             return False
         to_be_checked = to_be_checked[1:]
         correct_answer = correct_answer[1:]
-        if not check_answer_line(to_be_checked, correct_answer, test_num):
+        if not check_answer_line(to_be_checked, correct_answer, i):
             print("your output:\n" + to_be_checked_lines[i], "correct output:\n" + correct_answer_lines[i],
                   sep='\n---------------------------------------------------------\n',
                   end='\n---------------------------------------------------------\n'
@@ -62,11 +62,11 @@ def check_answer(to_be_checked_out, correct_answer_out, test_num):
 
 def test_code(get_time=False):
     if get_time:
-        subprocess.run("python3 timeTest/test_time_java.py", shell=True)
-    subprocess.run("javac yourCode/Main.java", shell=True, capture_output=True, text=True)
+        subprocess.run("python3 timeTest/test_time_c.py", shell=True)
+    subprocess.run("gcc ./yourCode/main.c -o run", shell=True, capture_output=True, text=True)
     for i in range(1, len(list(filter(lambda x: ".txt" in x, os.listdir('./tests/in')))) + 1):
         _input = open("./tests/in/input" + str(i) + ".txt")
-        output = subprocess.run('java yourCode/Main', shell=True, stdin=_input, capture_output=True, text=True)
+        output = subprocess.run('./run', shell=True, stdin=_input, capture_output=True, text=True)
         to_be_checked = output.stdout
         output_time = ''
         if get_time:
@@ -81,11 +81,9 @@ def test_code(get_time=False):
         if get_time:
             print(output_time + '\n\n')
     if get_time:
-        subprocess.run("python3 timeTest/reset_java.py", shell=True)
-    files = list(filter(lambda x: ".class" in x, os.listdir('./yourCode')))
-    for file in files:
-        os.remove('yourCode/' + file)
+        subprocess.run("python3 timeTest/reset_c.py", shell=True)
+    os.remove("run")
 
 
 if __name__ == '__main__':
-    test_code()
+    test_code(True)
