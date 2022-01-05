@@ -88,4 +88,4 @@ def test_code(get_time=False):
 
 
 if __name__ == '__main__':
-    test_code()
+    test_code(True)
