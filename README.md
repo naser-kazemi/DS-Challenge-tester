@@ -49,6 +49,8 @@ if __name__ == '__main__':
 ```
 The tester replaces `// **************` lines with the lines of code recommended for time evaluation in [here](https://quera.ir/course/assignments/37693/problems/129344) and runs the test with the execution time for each test shown in output. After running all test the indicator lines will be put back at there place and you can test your code again easily.
 
+The Tester run the test for each case for 20 times and gives the average execution time in the output. You can change the number of loops for each test case by modifying the `time_test_loop` variable in the first line of `test_code()` function.
+
 ## Common Issues
 
 + If you have problem running `test_python.py` script(for example you fail all tests but when run your own code and get the correct output), you may change `python3 ./yourCode/main.py` command to `python ./yourCode/main.py` in the subprocess.run() function and there will be no issues.
@@ -62,5 +64,5 @@ The tester replaces `// **************` lines with the lines of code recommended
 Tests from #1 to #10 consist of queries with more than one `\S*` in the given pattern and it is not necessary to pass them. But your code has to pass all the other tests.
 
 ### Next Updates
-In the next updates we will have other features for time testing such as "average execution time", more accurate "diff-checker functions" and also more test cases.
+In the next updates we will have other features for time testing, more accurate "diff-checker functions" and also more test cases.
 
