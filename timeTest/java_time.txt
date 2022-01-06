@@ -1,4 +1,4 @@
 long startTime = System.nanoTime();
 long endTime = System.nanoTime();
 double duration = (endTime - startTime) / 1000000.0;
-System.out.println("Your Code time is: " + duration);
+System.out.println(duration);

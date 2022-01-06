@@ -61,6 +61,7 @@ def check_answer(to_be_checked_out, correct_answer_out, test_num):
 
 
 def test_code(get_time=False):
+    time_test_loop = 20.0
     if get_time:
         subprocess.run("python3 timeTest/test_time_java.py", shell=True)
     subprocess.run("javac yourCode/Main.java", shell=True, capture_output=True, text=True)
@@ -68,18 +69,30 @@ def test_code(get_time=False):
         _input = open("./tests/in/input" + str(i) + ".txt")
         output = subprocess.run('java yourCode/Main', shell=True, stdin=_input, capture_output=True, text=True)
         to_be_checked = output.stdout
+        total_time = 0.0
         output_time = ''
+        lines = []
         if get_time:
-            lines = to_be_checked.strip().split('\n')
-            output_time = lines[len(lines) - 1]
-            to_be_checked = '\n'.join(lines[:len(lines) - 1])
+            for j in range(int(time_test_loop)):
+                _input = open("./tests/in/input" + str(i) + ".txt")
+                output = subprocess.run('java yourCode/Main', shell=True, stdin=_input, capture_output=True, text=True)
+                to_be_checked = output.stdout
+                lines = to_be_checked.strip().split('\n')
+                output_time = lines[len(lines) - 1]
+                try:
+                    temp = float(output_time.strip())
+                    total_time += temp
+                except ValueError:
+                    pass
+        to_be_checked = '\n'.join(lines[:len(lines) - 1])
         correct_answer = open_file("./tests/out/output" + str(i) + ".txt")
         if check_answer(to_be_checked, correct_answer, i):
             print('test #' + str(i) + " passed")
             print("---------------------------------------------------------"
                   "\n---------------------------------------------------------\n")
         if get_time:
-            print(output_time + '\n\n')
+            avg = total_time / time_test_loop
+            print('Your code average time in ' + str(int(time_test_loop)) + ' runs is: ' + str(avg) + '\n\n')
     if get_time:
         subprocess.run("python3 timeTest/reset_java.py", shell=True)
     files = list(filter(lambda x: ".class" in x, os.listdir('./yourCode')))

@@ -2,4 +2,4 @@
 long start_time = chrono::duration_cast<std::chrono::nanoseconds>(chrono::system_clock::now().time_since_epoch()).count();
 long end_time = chrono::duration_cast<std::chrono::nanoseconds>(chrono::system_clock::now().time_since_epoch()).count();
 double duration = (end_time - start_time) / 1000000.0;
-std::cout << "Your Code time is: " << duration << endl;
+std::cout << duration << endl;

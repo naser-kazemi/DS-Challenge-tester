@@ -3,4 +3,4 @@ struct timeval start, end;
 gettimeofday(&start, NULL);
 gettimeofday(&end, NULL);
 long duration = (end.tv_sec * 1000000 + end.tv_usec) - (start.tv_sec * 1000000 + start.tv_usec);
-printf("Your Code time is: %lu\n", duration);
+printf("%lu", duration);

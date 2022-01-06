@@ -1,4 +1,4 @@
 import time
 start_time = time.time_ns()
 end_time = time.time_ns()
-print('Your Code time is: ' + str((end_time - start_time) / 1_000_000))
+print((end_time - start_time) / 1_000_000)
