@@ -1,7 +1,0 @@
-37 5
-easy enjoy end engine advanced entirely academic absence abuse embarrassed effort accidental entertainment east advice economic accent emerge entire acquire above earth emergency abandon edge administration emphasis abroad absolute advertising eager accuse actor admiration ear admire edition
-abs\S*
-ent\S*
-ec\S*mic
-adv\S*
-editi\S*

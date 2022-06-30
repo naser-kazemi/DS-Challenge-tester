@@ -1,5 +1,0 @@
-6 3
-cat cape bear core cactus bar
-c\S*e
-\S*a\S*
-ca\S*
