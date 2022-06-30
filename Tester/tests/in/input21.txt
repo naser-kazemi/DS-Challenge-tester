@@ -1,0 +1,12 @@
+17 10
+employer actor embarrass achieve add economic ear education acceptable easily affair easy abroad ending accurate educational enemy
+ea\S*
+ec\S*
+eas\S*
+a\S*e
+a\S*ieve
+ac\S*r
+abro\S*
+embar\S*
+education\S*
+add\S*

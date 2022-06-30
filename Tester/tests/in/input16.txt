@@ -1,0 +1,11 @@
+45 9
+emotion effective abandon advertisement entitle addition address employ admit adequate above accurate educate entirely employee economy embarrassing actually adjust actual engage effectively advice engineering account acquire afford admiration acknowledge add enthusiasm acceptable engaged east advertising embarrassment absolutely academic accept abuse abandoned efficient accuse empire actor
+emotion\S*
+actu\S*y
+abo\S*
+eng\S*d
+\S*rd
+embarrassi\S*g
+a\S*unt
+aca\S*c
+a\S*
